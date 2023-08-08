@@ -7,6 +7,8 @@ cap = cv2.VideoCapture(path)
 cv2.namedWindow("Resized_Window", cv2.WINDOW_NORMAL)
 cv2.resizeWindow("Resized_Window", 1200, 700)
 
+mp.FaceDetection = mp.solutions.face_detection
+mpDraw = mp.solutions.drawing_utils
 pTime = 0
 while True:
     success,img = cap.read()
